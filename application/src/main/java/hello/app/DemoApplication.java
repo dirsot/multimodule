@@ -21,6 +21,11 @@ public class DemoApplication {
         return myService.message();
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "test";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
